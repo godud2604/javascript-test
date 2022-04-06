@@ -28,6 +28,12 @@ describe('Calculator', () => {
     expect(cal.value).toBe(59)
   });
 
+  it('add should throw an error if value is greater than 100', () => {
+    expect(() => {
+      cal.add(101);
+    }).toThrow('Value can not be greater than 100');
+  });
+
   it('subtract', () => {
     cal.set(9);
     cal.subtract(1);
