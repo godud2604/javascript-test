@@ -1,6 +1,6 @@
 const ProductClient = require('./product_client');
 
-// 받아온 데이터를, 클라이언트 로직과 같이 사용
+// Dependency Injection (의존관계 주입) 이 없는 version
 class ProductService {
   constructor() {
     this.productClient = new ProductClient();
