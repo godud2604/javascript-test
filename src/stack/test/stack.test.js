@@ -4,7 +4,7 @@ describe('Stack', () => {
   let stack;
 
   beforeEach(() => {
-    stack = new Stack([]);
+    stack = new Stack();
   });
 
   it('is created empty', () => {
